@@ -1,0 +1,10 @@
+<div *ngIf="heroe">
+  <h2>{{ heroe.nombre }}</h2>
+  <div><span>Id: </span>{{ heroe.id }}</div>
+  <div>
+    <label>Nombre:</label>
+    <input type="text" [(ngModel)]="heroe.nombre" />
+  </div>
+</div>
+<button (click)="save()">save</button>
+<button (click)="irAtras()">Ir atras</button>
